@@ -1,0 +1,18 @@
+<div class="container mt-3">
+  <div class="card-columns">
+    <div class="card" *ngFor="let product of getProducts">
+      <img [src]="product.imageUrl" class="card-img-top" alt="...">
+      <div class="card-body">
+
+
+        <hr style="position: relative;bottom: -40px;z-index: 0;"> <i class="fa fa-truck" id="icon" style=""></i>
+        <a (click)="SendInfo(product.productId)" class="enlace" >
+          <h5 class="card-title">{{product.productName}}</h5>
+        </a>
+        <p class="card-text">{{product.price}}</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
